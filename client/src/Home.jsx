@@ -1,8 +1,9 @@
 import React from 'react'
+import Recorder from './Recorder'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}><Recorder/></div>
   )
 }
 

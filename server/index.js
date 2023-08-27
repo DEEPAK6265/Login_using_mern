@@ -6,7 +6,7 @@ const EmployeeModel=require('./models/employee')
 const app =express()
 app.use(express.json())
 app.use(cors())
-mongoose.connect("mongodb://192.168.1.7:27017/employee")
+mongoose.connect("mongodb://:27017/employee")
 
 app.post('/login',(req,res)=>{
     const {email,password}=req.body;
